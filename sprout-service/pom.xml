@@ -60,4 +60,11 @@
         </profile>
     </profiles>
 
+    <modules>
+        <module>sprout-service-fegin</module>
+        <module>sprout-service-dao</module>
+        <module>sprout-service-controller</module>
+        <module>sprout-service-mapper</module>
+    </modules>
+
 </project>
