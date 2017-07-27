@@ -1,0 +1,39 @@
+server:
+  port: 8080
+#  context-path: /api/identification
+
+spring:
+ #数据库连接
+ h2.console.enabled: true
+ application:
+    name: zuul
+ jpa:
+  database: H2
+  show-sql: true
+  hibernate.ddl-auto: update
+  
+ redis:
+    host: 127.0.0.1
+    port: 6379
+  
+# datasource.platform: h2
+
+security:
+  sessions: ALWAYS
+
+zuul:
+  sensitiveHeaders: Set-Cookie,Authorization
+  ignoredServices: "*"
+  routes:
+    api-a:
+      path: /api-a/**
+      url: http://www.baidu.com
+      stripPrefix: false
+    api-b:
+      path: /api-b/**
+      url: http://blog.csdn.net
+      stripPrefix: false
+    api-hello:
+      path: /api/hello/**
+      serviceId: order
+      stripPrefix: false
