@@ -1,0 +1,21 @@
+server:
+  port: 8071
+  context-path: /api/hello
+
+spring:
+  application:
+    name: order
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    
+    
+security:
+  sessions: NEVER
+  
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka
+      
