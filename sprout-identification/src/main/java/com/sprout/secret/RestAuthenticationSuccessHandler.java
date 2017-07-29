@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 登录错误时进行的处理
- * @author Administrator
+ * @author fengshuaiju
  *
  */
 @Component

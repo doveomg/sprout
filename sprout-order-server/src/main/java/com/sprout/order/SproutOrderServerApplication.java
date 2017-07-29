@@ -1,4 +1,4 @@
-package com.sprout.controller;
+package com.sprout.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 @SpringBootApplication
 @EnableEurekaClient
 @EnableRedisHttpSession
-public class SpringCloudServerApplication {
+public class SproutOrderServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudServerApplication.class, args);
+		SpringApplication.run(SproutOrderServerApplication.class, args);
 	}
 	
 }

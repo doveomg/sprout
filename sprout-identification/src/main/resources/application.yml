@@ -15,6 +15,7 @@ spring:
  redis:
     host: 127.0.0.1
     port: 6379
+ output.ansi.enabled: always
   
 # datasource.platform: h2
 
@@ -25,14 +26,6 @@ zuul:
   sensitiveHeaders: Set-Cookie,Authorization
   ignoredServices: "*"
   routes:
-    api-a:
-      path: /api-a/**
-      url: http://www.baidu.com
-      stripPrefix: false
-    api-b:
-      path: /api-b/**
-      url: http://blog.csdn.net
-      stripPrefix: false
     api-hello:
       path: /api/hello/**
       serviceId: order

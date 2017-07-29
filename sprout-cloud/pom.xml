@@ -11,10 +11,11 @@
         <relativePath />
     </parent>
 
-    <groupId>com.dove</groupId>
-    <artifactId>sprout-spring-cloud</artifactId>
+    <groupId>com.sprout</groupId>
+    <artifactId>sprout-cloud</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <properties>
         <maven_war_plugin_version>2.6</maven_war_plugin_version>
         <maven_compiler_plugin_version>3.5.1</maven_compiler_plugin_version>
@@ -22,6 +23,8 @@
         <java_source_version>1.8</java_source_version>
         <java_target_version>1.8</java_target_version>
         <file_encoding>UTF-8</file_encoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <ehcache_version>2.10.4</ehcache_version>
         <mybatis.version>3.4.4</mybatis.version>
@@ -33,7 +36,10 @@
         <log4j2.version>2.8.2</log4j2.version>
         <hibernate-validator.version>5.4.1.Final</hibernate-validator.version>
         <validation-api>1.1.0.Final</validation-api>
+        <lombok.version>1.16.10</lombok.version>
+
     </properties>
+
     <dependencyManagement>
             <dependencies>
                 <dependency>

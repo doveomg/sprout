@@ -14,13 +14,14 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+/**
+ * Created by fengshuaiju on 2017/7/29 0029.
+ */
 @Entity
 @Table(name="ROLEENTITY")
 public class RoleEntity implements Serializable{
 
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	@Id
