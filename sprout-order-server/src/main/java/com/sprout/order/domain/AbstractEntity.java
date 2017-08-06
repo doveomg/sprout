@@ -1,21 +1,23 @@
 package com.sprout.order.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.Instant;
 
 /**
  * Created by fengshuaiju on 2017/7/29 0029.
  */
-public class AbstractEntiry {
+public class AbstractEntity implements Serializable{
 
     @Id
-    private Long id;
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    public Long id;
 
     @Version
-    private Integer version;
+    public Integer version;
 
     @Column(updatable = false,insertable = false,nullable = false,
             columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
-    private Instant createAt;
+    public Instant createAt;
 
 }

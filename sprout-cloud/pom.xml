@@ -37,6 +37,7 @@
         <hibernate-validator.version>5.4.1.Final</hibernate-validator.version>
         <validation-api>1.1.0.Final</validation-api>
         <lombok.version>1.16.10</lombok.version>
+        <fastjson.version>1.2.35</fastjson.version>
 
     </properties>
 

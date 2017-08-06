@@ -1,9 +1,6 @@
 package com.sprout.order.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import javax.persistence.*;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -12,8 +9,12 @@ import java.time.ZoneId;
  * Created by fengshuaiju on 2017/7/29 0029.
  */
 @Entity
-public class Orders extends AbstractEntiry {
+public class Orders {
+    //extends AbstractEntity {
 
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    public Long id;
 
     private OrderNo orderNo;
 

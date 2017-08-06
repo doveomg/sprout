@@ -9,8 +9,19 @@ spring:
     host: 127.0.0.1
     port: 6379
   output.ansi.enabled: always
-    
-    
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+
+  cloud.stream:
+    bindings:
+      input:
+        group: com.sprout
+        destination: com.sprout.order
+      output:
+        destination: com.sprout.order
+
 security:
   sessions: NEVER
   

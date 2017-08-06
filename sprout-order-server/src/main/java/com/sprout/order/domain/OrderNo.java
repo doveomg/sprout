@@ -18,7 +18,7 @@ public class OrderNo {
 
     private String orderNo;
 
-    protected static OrderNo generate(){
+    public static OrderNo generate(){
         OrderNo orderNo = new OrderNo();
         orderNo.orderNo = UUID.randomUUID().toString().replace("-", "");
         return orderNo;
