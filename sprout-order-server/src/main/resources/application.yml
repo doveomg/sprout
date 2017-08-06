@@ -1,6 +1,6 @@
 server:
   port: 8071
-  context-path: /api/hello
+  context-path: /api/order
 
 spring:
   application:

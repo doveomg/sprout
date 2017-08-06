@@ -27,6 +27,6 @@ zuul:
   ignoredServices: "*"
   routes:
     api-hello:
-      path: /api/hello/**
+      path: /api/order/**
       serviceId: order
       stripPrefix: false

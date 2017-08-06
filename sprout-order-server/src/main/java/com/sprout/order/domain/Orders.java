@@ -37,7 +37,7 @@ public class Orders extends AbstractEntiry {
     @Column(length = 255)
     private String goodsDesc;
 
-    private Instant signInTime;
+    private Instant signInTime = Instant.now();
 
     @Column(length = 16, nullable = false)
     private String receiver;
